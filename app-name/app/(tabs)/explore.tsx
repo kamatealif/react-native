@@ -49,7 +49,7 @@ export default function TabTwoScreen() {
           <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
           different screen densities
         </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
+        <Image source={require('@/assets/images/coffee-icon.png')} style={styles.images} />
         <ExternalLink href="https://reactnative.dev/docs/images">
           <ThemedText type="link">Learn more</ThemedText>
         </ExternalLink>
@@ -105,5 +105,14 @@ const styles = StyleSheet.create({
   titleContainer: {
     flexDirection: 'row',
     gap: 8,
+  },
+  images:{
+    alignSelf: 'center',
+    height:'50%',
+    width:'50%',
+    resizeMode:'cover',
+    borderColor:'#808080',
+    borderWidth:1,
+    borderRadius:10,
   },
 });
